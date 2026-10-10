@@ -66,7 +66,12 @@ var CREDENTIALS = {
 3. Click **Load unpacked**.
 4. Select the `LeetCode GitHub Pusher` directory.
 
-### 3. Start Solving on LeetCode!
+### 3. Test Connection
+1. Click the **LeetCode GitHub Pusher** extension icon in your Chrome toolbar.
+2. In the extension popup window, click **Save & Test Connection**.
+3. A success message (`✅ Connected to username/repo`) confirms your setup is working!
+
+### 4. Start Solving on LeetCode!
 1. Go to any problem on [LeetCode](https://leetcode.com).
 2. Submit your code.
 3. Once **Accepted**, click **🚀 Push to GitHub** on the bottom-right action widget.
