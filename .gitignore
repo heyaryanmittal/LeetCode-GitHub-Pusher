@@ -1,0 +1,20 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sensitive credentials configuration
+credentials.js
+
+# Local configuration / scratch files
+scratch/

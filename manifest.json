@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode GitHub Pusher",
+  "version": "1.0.0",
+  "description": "Push accepted LeetCode solutions into clean LC-number folders with problem metadata and an auto-updated README.",
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://leetcode.cn/*",
+    "https://api.github.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LeetCode GitHub Pusher"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

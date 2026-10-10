@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LeetCode GitHub Pusher</title>
+  <style>
+    body{width:400px;padding:20px;font-family:Arial,sans-serif;color:#111827;margin:0}
+    h2{margin:0 0 5px}
+    .sub{font-size:12px;color:#6b7280;margin-bottom:16px}
+    label{display:block;margin:11px 0 5px;font-size:12px;font-weight:700}
+    input{width:100%;box-sizing:border-box;padding:9px;border:1px solid #d1d5db;border-radius:7px}
+    button{width:100%;margin-top:15px;padding:10px;border:0;border-radius:7px;background:#24292f;color:#fff;font-weight:700;cursor:pointer}
+    #status{margin-top:10px;font-size:12px;line-height:1.4}
+    .ok{color:#15803d}.err{color:#b91c1c}
+    .box{margin-top:15px;padding:10px;background:#f6f8fa;border-radius:8px;font:11px monospace}
+    .small{font-size:11px;color:#6b7280;margin-top:10px;line-height:1.4}
+  </style>
+</head>
+<body>
+  <h2>LeetCode → GitHub</h2>
+  <div class="sub">v4.0.0 · Accepted solution sync + metadata + README.</div>
+
+  <label>GitHub username</label>
+  <input id="username" placeholder="e.g. octocat" autocomplete="off">
+
+  <label>Repository</label>
+  <input id="repo" placeholder="e.g. LeetCode-Solutions" autocomplete="off">
+
+  <label>Branch</label>
+  <input id="branch" placeholder="main" autocomplete="off">
+
+  <label>Fine-grained GitHub PAT</label>
+  <input id="token" type="password" placeholder="github_pat_..." autocomplete="off">
+
+  <button id="save">Save & Test Connection</button>
+  <div id="status"></div>
+
+  <div class="box">
+    LeetCode-Solutions/<br>
+    ├── README.md<br>
+    ├── LC-1/<br>
+    │&nbsp;&nbsp;├── problem.md<br>
+    │&nbsp;&nbsp;└── solution.java<br>
+    └── ...
+  </div>
+
+  <div class="small">
+    The token should be restricted to this repository with
+    <b>Contents → Read and write</b>.
+  </div>
+
+  <script src="credentials.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
